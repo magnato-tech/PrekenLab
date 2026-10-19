@@ -1,0 +1,6 @@
+{
+  "name": "TaleLab - Norsk AI-stemmelab for prekener og opplesning",
+  "description": "Profesjonell norsk AI-stemmelab for predikanter. Klon din egen stemme fra MP3-opptak, test med norsk bokmål, og produser naturlig prekentale.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

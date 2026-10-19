@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  chatterbox-tts:
+    build: .
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./references:/app/references
+      - ./outputs:/app/outputs
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [gpu]
+    environment:
+      - PYTHONUNBUFFERED=1
